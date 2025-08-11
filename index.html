@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLY Truckers Builty</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+
+
+  <div class="builty-container" id="builty">
+    <div class="logo-section">
+      <img src="logo.png" alt="FLY Truckers Logo" class="logo" />
+    </div>
+
+    <div class="office-info">
+      <p><strong>Head Office:</strong> Gate #3, Street 02, Plot A-435 Howksbay Road, (Karachi) 021-32534455</p>
+      <p><strong>Email:</strong> operation@flytruckers.com, <strong>Web:</strong> www.flytruckers.com</p>
+      <p><strong>LHR Office:</strong> Plot 13 Sabzazar Truck Stand, (Lahore) 042-337520655</p>
+    </div>
+
+    <table class="builty-table">
+      <tr>
+        <!-- Bilty Number with ID -->
+        <td><span>Bilty;</span> <input type="text" id="biltyNumber" readonly></td>
+
+        <!-- Date input -->
+        <td colspan="2">
+          <span>Date.</span>
+          <input class="form-input" name="date" id="date" type="text" placeholder="Select date">
+        </td>
+
+        <td><span>Veh#</span> <input type="text"></td>
+        <td><span>From;</span> <input type="text"></td>
+        <td><span>To;</span> <input type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><span>Sender;</span> <input type="text"></td>
+        <td colspan="2"><span>Receiver;</span> <input type="text"></td>
+        <td colspan="2"><span>Driver Name;</span> <input type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><span>Contact;</span> <input type="text"></td>
+        <td colspan="2"><span>Size;</span> <input type="text"></td>
+        <td colspan="2"><span>Seal No;</span> <input type="text"></td>
+      </tr>
+    </table>
+
+    <table class="builty-table">
+      <colgroup>
+        <col style="width: 10%;">
+        <col style="width: 10%;">
+        <col style="width: 40%;">
+        <col style="width: 10%;">
+        <col style="width: 10%;">
+      </colgroup>
+      <tr class="centered-row">
+        <td><span>Quantity;</span></td>
+        <td><span>Weight</span></td>
+        <td><span>Cargo Details</span></td>
+        <td><span>Freight</span></td>
+        <td><span>Advanced</span></td>
+      </tr>
+      <tr class="input-box-row">
+        <td class="input-box"><input type="text"></td>
+        <td class="input-box"><input type="text"></td>
+        <td class="input-box cargo-cell">
+          <input type="text">
+          <textarea readonly class="cargo-warning">
+براۓ مہربانی ڈرائیور حضرات رات کو گاڑی کو نہ چلایں کسی حادثہ کی صورت میں گاڑی کے مالکان ذمہ دار نہ ہونگے (ملک شہزاد ٹریلر سروس)
+</textarea>
+
+        </td>
+        <td class="input-box"><input type="text"></td>
+        <td class="input-box"><input type="text"></td>
+      </tr>
+    </table>
+
+    <div class="bottom-sections">
+      <div class="instruction-box">
+        <h4>Instructions:</h4>
+        <ul>
+          <li>"After loading the container at the port, check it properly<br> and note any dents, etc., from the long
+            yard."</li>
+          <li>After unloading the goods at the mills, inspect the empty container.</li>
+          <li>If the container is damaged, broken, or has any defects, have the builty written by the Long Incharge.
+          </li>
+          <li>In any other case, refer to the Karachi office; otherwise, the company will not be held responsible.</li>
+        </ul>
+      </div>
+
+      <div class="empty-box">
+        <img src="Stamp.jpg" alt="Stamp" class="stamp-image">
+        <label for="signature"><strong>Signature:</strong></label>
+        <input type="text" id="signature" name="signature" class="signature-input">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="download-btn-container">
+    <button id="downloadImageBtn">Download as Image</button>
+    <button id="downloadPdfBtn">Download as PDF</button>
+  </div>
+
+
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!-- Custom JS -->
+  <script src="builty.js"></script>
+</body>
+
+</html>

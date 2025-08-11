@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: ltr;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.builty-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+.logo-section h1 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.tagline {
+  font-style: italic;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.office-info {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* ==================== TABLE ==================== */
+.builty-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.builty-table td {
+  border: 1px solid #000000;
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 19px;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+/* ==================== 3-COLUMN ROW WIDTH ==================== */
+.builty-table tr.three-col td {
+  width: 33.33%;
+}
+
+/* ==================== CARGO DETAILS WIDTH ADJUSTMENT ==================== */
+.centered-row {
+  background-color: #ccc;
+}
+.centered-row td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/* ==================== BOTTOM INPUT BOXES ==================== */
+.input-box-row td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+tr.input-box-row input {
+  font-size: 20px;
+  padding: 4px; /* optional, thoda space dene ke liye */
+}
+
+.input-box {
+  height: 250px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.input-box input {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================== FORM INPUTS INSIDE TABLE ==================== */
+.builty-table td span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.builty-table input {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 4px 0;
+}
+
+.builty-table input[type="text"] {
+  width: 100%;
+}
+
+/* ==================== BOTTOM SECTIONS ==================== */
+.bottom-sections {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.instruction-box,
+.empty-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.instruction-box h4 {
+  margin-top: 0;
+  color: orangered;
+}
+
+.instruction-box ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.instruction-box ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ==================== SIGNATURE INPUT ==================== */
+label {
+  margin-left: 40px;
+}
+
+.signature-input {
+  border: none !important;
+  border-bottom: 2px solid #000 !important;
+  outline: none !important;
+  padding: 5px 0;
+  width: 200px;
+  margin-top: 1px;
+  font-size: 16px;
+  margin-left: 20px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.input-box input[readonly] {
+  height: 60px;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 1.4;
+  direction: rtl;
+}
+
+/* ==================== CARGO WARNING ==================== */
+.cargo-warning {
+  width: 100%;
+  height: 40px;
+  font-size: 8px; /* Final size */
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
+  color: red;
+  border: none;
+  resize: none;
+  background: transparent;
+  box-sizing: border-box;
+  margin-top: 160px;
+  padding: 0;
+  position: sticky;
+}
+
+/* ==================== CARGO CELL ==================== */
+.cargo-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.cargo-cell input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 28px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ==================== DOWNLOAD BUTTON ==================== */
+.download-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-btn-container button {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.download-btn-container button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+.download-btn-container button:active {
+  transform: scale(0.98);
+}
+
+/* ==================== FLY TRUCKER STAMP ==================== */
+.stamp-image {
+  display: block;
+  max-width: 80px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  margin-left: 190px;
+  border-radius: 50%;
+}
