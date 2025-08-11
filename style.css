@@ -253,3 +253,27 @@ label {
   margin-left: 190px;
   border-radius: 50%;
 }
+
+/* Urdu Note CSS*/
+
+.urdu-note {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Vertically align */
+  direction: rtl;
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+}
+
+.urdu-note .label {
+  margin-left: 10px; /* gap between "نوٹ:" and text */
+}
+.urdu-note span {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.urdu-note p {
+  color: red;
+  margin: 0;
+}
